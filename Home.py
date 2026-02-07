@@ -51,102 +51,67 @@ url_blog = 'https://www.alphaledgr.com/Blog'
 url_linkedin = "https://www.linkedin.com/company/ledgrapp/"
 
 
-# Authentication 1 #  
-st.markdown(''' <div align="center"><h1>Hello! Welcome to Ledgr.</h1></div>''',
-                unsafe_allow_html=True)
-
-def login_screen():
-
-    st.markdown(''' <div align="center"><h1>Authenticate via Google to proceed.</h1></div>''',
-                unsafe_allow_html=True)
-    st.markdown(''' <div align="center"><h1>Proceed into a new ecosystem.</h1></div>''',
-                unsafe_allow_html=True)
-    # st.subheader()
-    st.image(logofile,width='content')
-    v1, v2, v3 = st.columns([2, 2, 2])
-    with v1:
-        st.write(" ")
-    with v2:
-        if st.button("Log in with Google"):
-            st.login("google")
-    with v3:
-        st.write(" ")
-
-
-
-if not st.user.is_logged_in:
-    login_screen()
-    st.stop()
-
-
-if st.user.is_logged_in:
-    st.write(st.user)
-    st.user
-    st.sidebar.button("Log out", on_click=st.logout)
-
-    st.user.family_name
-
         # Main Streamlit app starts here
 
     
-    st.markdown('''
-                <div align="center">
-                <h3>Learn how to get started on the platform!
-                See below for details..</h3></div>''',
-                unsafe_allow_html=True)
-   # st.write(f'{username} Welcome!')
-    st.image(f'{direc}/pages/appdata/imgs/The alphaLedgr Web3 Platform.png',
-             width="content")
-    with st.container():
-        a1, a2a, a2, a3 = st.columns([1, 1, 4, 1])
-        with a1:
-            st.image(f'{direc}/pages/appdata/imgs/LedgrBase.svg',
-                     caption='Your Unified Wealth Dashboard')
-        with a2a:
-            st.write(" ")
-        with a2:
-            st.subheader("Part I: Ledgrbase")
-            st.write("Map your existing asset holdings and portfolios.")
-            st.write("Review and note their overall performance till date.")
-            st.subheader("Part II: MarketBoard")
-            st.write("Calculate Returns from SIPs, Explore ETFs and Mutual Funds.")
-        with a3:
-            st.image(f'{direc}/pages/appdata/imgs/MarketBoard.png',
-                     caption='Market Profiles, Plots and Instruments')
-    st.write("-------------------------------------------------------------------")
-
- 
-
-    st.write("-------------------------------------------------------------------")
+st.markdown('''
+            <div align="center">
+            <h3>Learn how to get started on the platform!
+            See below for details..</h3></div>''',
+            unsafe_allow_html=True)
+# st.write(f'{username} Welcome!')
+st.image(f'{direc}/pages/appdata/imgs/The alphaLedgr Web3 Platform.png',
+         width="content")
+with st.container():
+    a1, a2a, a2, a3 = st.columns([1, 1, 4, 1])
+    with a1:
+        st.image(f'{direc}/pages/appdata/imgs/LedgrBase.svg',
+                 caption='Your Unified Wealth Dashboard')
+    with a2a:
+        st.write(" ")
+    with a2:
+        st.subheader("Part I: Ledgrbase")
+        st.write("Map your existing asset holdings and portfolios.")
+        st.write("Review and note their overall performance till date.")
+        st.subheader("Part II: MarketBoard")
+        st.write("Calculate Returns from SIPs, Explore ETFs and Mutual Funds.")
+    with a3:
+        st.image(f'{direc}/pages/appdata/imgs/MarketBoard.png',
+                 caption='Market Profiles, Plots and Instruments')
+st.write("-------------------------------------------------------------------")
 
 
-    with st.container():
-        c1, c2a, c2 = st.columns([1, 1, 3])
-        with c1:
-            st.image(f'{direc}/pages/appdata/imgs/AnalyticsBox.png',
-                     caption='Analytics and Information')
-        with c2a:
-            st.write(" ")
-        with c2:
-            st.subheader("AnalyticsBox")
-            st.write("Analyze a Security In-Depth. Visualize Metrics & Indicators")
-            st.write("Gather comprehensive knowhow on a selected Security.")
-    st.write("-------------------------------------------------------------------")
-    with st.container():
-        d1, d2a, d2 = st.columns([3, 1, 1])
-        with d1:
-            st.subheader("InvestmentLab")
-            st.write("Optimize Investment Allocations.")
-            st.write("Generate Efficient Portfolios to Maximize Returns.")
-            st.write("""Input assets and amount to proceed.""")
-            st.write("""Select any from 5 Optimized portfolios presented.""")
 
-        with d2a:
-            st.write(" ")
-        with d2:
-            st.image(f'{direc}/pages/appdata/imgs/InvestmentLab.png',
-                caption='Generate Optimal Portfolios',
-                width='content')
+st.write("-------------------------------------------------------------------")
+
+
+with st.container():
+    c1, c2a, c2 = st.columns([1, 1, 3])
+    with c1:
+        st.image(f'{direc}/pages/appdata/imgs/AnalyticsBox.png',
+                 caption='Analytics and Information')
+    with c2a:
+        st.write(" ")
+    with c2:
+        st.subheader("AnalyticsBox")
+        st.write("Analyze a Security In-Depth. Visualize Metrics & Indicators")
+        st.write("Gather comprehensive knowhow on a selected Security.")
+st.write("-------------------------------------------------------------------")
+with st.container():
+    d1, d2a, d2 = st.columns([3, 1, 1])
+    with d1:
+        st.subheader("InvestmentLab")
+        st.write("Optimize Investment Allocations.")
+        st.write("Generate Efficient Portfolios to Maximize Returns.")
+        st.write("""Input assets and amount to proceed.""")
+        st.write("""Select any from 5 Optimized portfolios presented.""")
+
+    with d2a:
+        st.write(" ")
+    with d2:
+        st.image(f'{direc}/pages/appdata/imgs/InvestmentLab.png',
+            caption='Generate Optimal Portfolios',
+            width='content')
 
 
 
