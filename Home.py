@@ -8,11 +8,12 @@
 # __maintainer__ = 'r_xn@alphaledgr.com'
 # __emails__ = 'r_xn@alphaledgr.com / response@alphaledgr.com'
 # __status__ = 'In active development'
-import streamlit_authenticator as stauth
 
 # from yaml.loader import SafeLoader
 import os
 import streamlit as st
+import streamlit_authenticator as stauth
+
 from streamlit_option_menu import option_menu
 import yfinance as yf
 import matplotlib.pyplot as plt
@@ -22,14 +23,14 @@ direc = os.getcwd()
 
 ##################################################################
 logofile = f'{direc}/pages/appdata/imgs/Ledgr_Logo_F2.png'
-links1 = ["https://www.investopedia.com/", "https://www.wsj.com/"]
-selected = option_menu(
-    menu_title=None,
-    options = ["News", "LedgrSite", "Media, Visuals & Posts"],
+#links1 = ["https://www.investopedia.com/", "https://www.wsj.com/"]
+#selected = option_menu(
+#    menu_title=None,
+#    options = ["News", "LedgrSite", "Media, Visuals & Posts"],
 
-    default_index=1,
-    orientation="Horizontal",
-    )
+#    default_index=1,
+#    orientation="Horizontal",
+#    )
 
 with st.sidebar:
     st.image(logofile)
