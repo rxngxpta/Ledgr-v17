@@ -41,7 +41,7 @@ start = dt.datetime(2019, 1, 1)
 end = dt.datetime.now() 
 
 
-st.sidebar.button("Log out", on_click=st.logout)
+# st.sidebar.button("Log out", on_click=st.logout)
 st.title("Evaluate your assets")
 
 
