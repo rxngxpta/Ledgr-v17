@@ -61,7 +61,7 @@ url_linkedin = "https://www.linkedin.com/company/ledgrapp/"
 choicelist = ["Prophet", "LSTM", "Others"]
 st.write("  ---------------------------------------------------------------  ")
 
-st.sidebar.button("Log out", on_click=st.logout)
+# st.sidebar.button("Log out", on_click=st.logout)
 st.title("Forecast Price Ranges.")
 st.header("Just select a stock ticker.", divider='rainbow')
 
