@@ -49,7 +49,7 @@ list2 = ["Guidance, Teaching and Support", "Trust & Tactical Advice",
 "Observatorship & Moderating"]
 st.write("  ---------------------------------------------------------------  ")
 
-st.sidebar.button("Log out", on_click=st.logout)
+#st.sidebar.button("Log out", on_click=st.logout)
 st.title("Feedbacks, Contacts & Collaboration")
 c21, c22 = st.columns(2)
 with c21:
