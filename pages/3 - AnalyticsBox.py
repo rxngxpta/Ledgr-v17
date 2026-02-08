@@ -53,7 +53,7 @@ url_blog = 'https://www.alphaledgr.com/Blog'
 url_linkedin = "https://www.linkedin.com/company/ledgrapp/"
 # ############################################################
 
-st.sidebar.button("Log out", on_click=st.logout)
+# st.sidebar.button("Log out", on_click=st.logout)
 st.title("Analyze any Asset. In-Depth, at ease.")
 
 
