@@ -80,8 +80,8 @@ st.sidebar.caption(
 )
 # ################################################################
 
-st.sidebar.button("Log out", on_click=st.logout)
-st.title("Your Wealth Dashboard and Global Finances")
+# st.sidebar.button("Log out", on_click=st.logout)
+# st.title("Your Wealth Dashboard and Global Finances")
 
 
 
