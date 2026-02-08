@@ -83,15 +83,6 @@ st.sidebar.caption(
 # st.sidebar.button("Log out", on_click=st.logout)
 # st.title("Your Wealth Dashboard and Global Finances")
 
-
-
-
-
-
-
-
-
-
 # #############################################################
 bc1, bc2 = st.columns(2)
 with bc1:
@@ -121,6 +112,7 @@ with st.form("pfinputs"):
         st.cache_resource.clear()
         st.cache_data.clear()
         pass
+        
 st.success("Thanks! Optimization en course!")
 pf_df = pd.DataFrame(
     {
