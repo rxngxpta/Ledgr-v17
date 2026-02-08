@@ -38,10 +38,6 @@ import yfinance as yf
 # from ta.utils import dropna
 from functools import reduce
 
-st.cache_data.clear()
-st.cache_resource.clear()
-
-
 st.set_page_config(page_title="Ledgr | Optimization Engine", layout="wide")
 
 direc = os.getcwd()
