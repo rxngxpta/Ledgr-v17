@@ -16,7 +16,6 @@ import numpy as np
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-import seaborn as sns
 import matplotlib as plt
 from pypfopt.efficient_frontier import EfficientFrontier
 

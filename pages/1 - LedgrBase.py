@@ -20,7 +20,6 @@ import os
 
 # import pickle
 import matplotlib as plt
-import seaborn as sns
 from plotly.subplots import make_subplots
 from selectolax.parser import HTMLParser
 import requests
