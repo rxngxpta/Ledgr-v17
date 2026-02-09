@@ -14,7 +14,7 @@ import os
 import streamlit as st
 import streamlit_authenticator as stauth
 
-from streamlit_option_menu import option_menu
+#from streamlit_option_menu import option_menu
 import yfinance as yf
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
