@@ -11,7 +11,7 @@ import datetime as dt
 # import base64
 # import urllib
 # Page Setup ##################################################################
-sns.set()
+# sns.set()
 plt.style.use('fivethirtyeight')
 st.set_page_config(page_title='Ledgr | Valuation & Pricing Models',
                    layout="wide", initial_sidebar_state="expanded")
